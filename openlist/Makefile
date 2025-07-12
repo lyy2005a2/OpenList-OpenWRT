@@ -17,9 +17,9 @@ PKG_HASH:=216a7c7c66de9bcff59ab946874a8b4641b2b6e90c5236bd45bf8219149c5a3d
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/OpenList-$(PKG_VERSION)
 
-PKG_LICENSE:=GPL-3.0
+PKG_LICENSE:=AGPL-3.0
 PKG_LICENSE_FILE:=LICENSE
-PKG_MAINTAINER:=sbwml <admin@cooluc.com>
+PKG_MAINTAINER:=OpenList Team <openlistteam@gmail.com>
 
 define Download/openlist-frontend
   FILE:=openlist-frontend-dist-v$(PKG_WEB_VERSION).tar.gz

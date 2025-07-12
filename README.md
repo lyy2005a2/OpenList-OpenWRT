@@ -29,12 +29,12 @@
   *1. requires golang 1.24.x or latest version (Fix build for older branches of OpenWrt.)*
   ```shell
   rm -rf feeds/packages/lang/golang
-  git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
+  git clone https://github.com/OpenListTeam/packages_lang_golang -b 24.x feeds/packages/lang/golang
   ```
 
   *2. get luci-app-openlist code & building*
   ```shell
-  git clone https://github.com/sbwml/luci-app-openlist package/openlist
+  git clone https://github.com/OpenListTeam/OpenList-OpenWRT package/openlist
   make menuconfig # choose LUCI -> Applications -> luci-app-openlist
   make package/openlist/luci-app-openlist/compile V=s # build luci-app-openlist
   ```
@@ -58,12 +58,12 @@
 
 - Execute install script (Multi-architecture support)
   ```shell
-  sh -c "$(curl -ksS https://raw.githubusercontent.com/sbwml/luci-app-openlist/main/install.sh)"
+  sh -c "$(curl -ksS https://raw.githubusercontent.com/OpenListTeam/OpenList-OpenWRT/main/install.sh)"
   ```
 
   install via ghproxy:
   ```shell
-  sh -c "$(curl -ksS https://raw.githubusercontent.com/sbwml/luci-app-openlist/main/install.sh)" _ gh_proxy="https://gh.cooluc.com"
+  sh -c "$(curl -ksS https://raw.githubusercontent.com/OpenListTeam/OpenList-OpenWRT/main/install.sh)" _ gh_proxy="https://gh.cooluc.com"
   ```
 
 --------------
