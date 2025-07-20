@@ -119,7 +119,7 @@ fi
 
 # Download the corresponding package archive
 PKG_FILE="$SDK-$DISTRIB_ARCH.tar.gz"
-BASE_URL="https://github.com/OpenListTeam/OpenList-OpenWRT/releases/latest/download/$PKG_FILE"
+BASE_URL="https://github.com/lyy2005a2/OpenList-OpenWRT/releases/latest/download/$PKG_FILE"
 if [ -n "$gh_proxy" ]; then
     PKG_URL="${gh_proxy}${BASE_URL}"
 else

@@ -37,7 +37,7 @@ jobs:
         with:
           name: ${{ github.event.client_payload.release_name }}
           tag: ${{ github.event.client_payload.release_tag }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.MY_GITHUB_TOKEN }}
           draft: false
           prerelease: false
           body: |
@@ -131,7 +131,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ github.event.client_payload.release_tag }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.MY_GITHUB_TOKEN }}
           allowUpdates: true
           replacesArtifacts: false
           omitBody: true
